@@ -16,4 +16,12 @@ Created an *Image Project* in [TeachableMachine](https://teachablemachine.withgo
 4. Ran the code. You may need to run it twice twice as the first run may not produce results, for some reason.
 
 --------------
+## Milestone 3
+*refine later*: to export the list of requirements to a file you can either do:
+`pip list > requirements.txt` or `conda env export > env.yaml`.
+How can this be useful? To create an env with desired dependicies, you can do:
+`conda env create --f env.yaml -n new_test_env`
 
+
+--------------
+## Milestone 4

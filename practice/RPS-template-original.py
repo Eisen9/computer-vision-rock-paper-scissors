@@ -1,7 +1,7 @@
 import cv2
 from keras.models import load_model
 import numpy as np
-model = load_model('keras_model.h5')
+model = load_model('keras_model.h5') #TODO: fetch path
 cap = cv2.VideoCapture(0)
 data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
 
@@ -12,9 +12,6 @@ while True:
     normalized_image = (image_np.astype(np.float32) / 127.0) - 1 # Normalize the image
     data[0] = normalized_image
     prediction = model.predict(data)
-    # Notice that the prediction is a numpy array with one row and four columns. So first, you need to access the first row, and then get the index of the highest value in the row
-    predicted_class = np.argmax(prediction[0]) # Get the index of the highest value in the row (we only have one row)
-    print(f"Predicted class is: {predicted_class}") 
     cv2.imshow('frame', frame)
     # Press q to close the window
     print(prediction)
