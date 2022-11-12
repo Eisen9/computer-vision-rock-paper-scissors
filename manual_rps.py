@@ -47,11 +47,21 @@ def get_winner(computer_choice, user_choice):
             print("It is a tie!")
 
 # Play the game
-print("Welcome to Rock-Paper-Scissors!")
-computer_choice = get_computer_choice()
-user_choice = get_user_choice()
-get_winner(computer_choice, user_choice)
-print("The computer chose", computer_choice)
-print("You chose", user_choice)
-print("Thanks for playing!")
+def play():
+    '''
+    This function plays the game of RPS by:
+    assigning the get_computer_choice and the get_user_choice functions to
+    variables then passing these two variables as arguments for the 
+    get_winner function.
+    '''
+    print("Welcome to Rock-Paper-Scissors!")
+    computer_choice = get_computer_choice()
+    user_choice = get_user_choice()
+    get_winner(computer_choice, user_choice)
+    print("The computer chose", computer_choice)
+    print("You chose", user_choice)
+    print("Thanks for playing!")
+
+print(play())
+
 
