@@ -11,6 +11,8 @@ while True:
     image_np = np.array(resized_frame)
     normalized_image = (image_np.astype(np.float32) / 127.0) - 1 # Normalize the image
     data[0] = normalized_image
+    # set verbose to 0 if you want to slience print
+    # prediction = model.predict(data, verbose=0) # delete verbose to retrieve to origianal state
     prediction = model.predict(data)
     # Notice that the prediction is a numpy array with one row and four columns. So first, you need to access the first row, and then get the index of the highest value in the row
     predicted_class = np.argmax(prediction[0]) # Get the index of the highest value in the row (we only have one row)
