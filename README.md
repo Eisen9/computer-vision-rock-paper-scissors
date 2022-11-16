@@ -38,3 +38,5 @@ get_winner function.
 
 --------------
 ## Milestone 5
+In this milestone, we bring the project to its final stage. Find the code for this milestone in a file called `camera_rps.py`. When you run this file, you play the Rock Paper Scissors (RPS) with your computer: you show either Rock, Paper or Scissors to the camera that will be invoked when you run the file, then the computer picks a random choice of Rock, Paper or Scissors... The winner is decided according to the classical rules of RPS. 
+

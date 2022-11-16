@@ -17,7 +17,7 @@ while True:
     print(f"Predicted class is: {predicted_class}") 
     cv2.imshow('frame', frame)
     # Press q to close the window
-    print(prediction)
+    print(prediction) 
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
             
