@@ -1,7 +1,38 @@
-# Computer Vision RPS
+
+# Computer Vision Rock Paper Scissors Project Documentation 
+
+> Rock Paper Scissors (RPS) Game is a game that asks two users to display Rock, Paper or Scissors at the same time and declares a winner according to the classical rule of RPS. 
+- In this project the computer chooses an option (rock, paper, or scissors) and then ask the user for an input and the user has to decide.
+
+- User's input will first be entered manually. In the next stage of the project, we use the camera (using computer vision techniques) to get the input of the user.
+
+- To start, we need to install all libraries and python packages that we need for this project.
 
 ## Milestone 1
-Setting up the environment.
+
+- Create a virtual environment:
+
+    - First, create a conda environment and then install the necessary requirements as well as opencv-python, tensorflow, and ipykernel.
+
+    - After creating the environment, activate it, and then install pip as following:
+    ```code
+    conda install pip
+    ```
+    
+    Now in order to install any library, you can run:
+    ```code
+    pip install <library>
+    ```
+
+    - Important: In some cases (depending on your current OS) the latest version of Tensorflow may not work with the default version of Python. When creating the virtual environment, use Python 3.8 instead by running:
+    ```code
+    conda create -n my_env python=3.8
+    ```
+
+    Where my_env is the name of the environment you want to create.
+
+   
+- See exact libraries in *Milestone 2* below.
 
 --------------
 ## Milestone 2
